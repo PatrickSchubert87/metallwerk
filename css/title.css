@@ -50,7 +50,7 @@
     }
     #slide-img-2 {
         /* background-image: url(/img/metallwerk.png); */
-        background-image: url(https://github.com/PatrickSchubert87/metallwerk/blob/master/img/metallwerk.png?raw=true);
+        background-image: url(https://raw.githubusercontent.com/PatrickSchubert87/metallwerk/master/img/metallwerk.png);
     }
     #slide-img-3 {
         background-image: url(https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/0f/0f4cd412-f008-4938-8f39-a4d66d5b2f3d?rule=$_57.JPG);
