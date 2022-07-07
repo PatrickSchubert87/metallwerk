@@ -1,0 +1,57 @@
+.img-header-carousel {
+    height: 100vh;
+}
+
+@media all and (max-width: 719px){
+    .title-logo {
+        padding-top: 56px;
+    }
+    
+    #title-carousel {
+        display: none;
+    }
+}
+
+@media all and (min-width: 720px) {
+
+    .title-logo {
+        display: none;
+    }
+
+    .title-carousel-inner {
+        padding-top: 56px;
+        height: 100vh;
+    }
+    
+    #title-carousel {
+        display: block;
+        /* padding-top: 30px; */
+        /* display: flex;
+        align-items: center; */
+        /* height: 500px; */
+    }
+
+    .title-slide-img {
+        /* display: block; */
+        height: 100vh;
+        /* width: 100vw; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* position: relative; */
+
+    }
+
+    .slider-text {
+        /* height: 100vh; */
+        background-color: rgba(0, 0, 0, .2);
+    }
+    #slide-img-1 {
+        background-image: url(https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/a8/a835b3e9-ba3f-4685-a2e7-566d2b026394?rule=$_57.JPG);
+    }
+    #slide-img-2 {
+        background-image: url(/img/metallwerk.png);
+    }
+    #slide-img-3 {
+        background-image: url(https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/0f/0f4cd412-f008-4938-8f39-a4d66d5b2f3d?rule=$_57.JPG);
+    }
+}

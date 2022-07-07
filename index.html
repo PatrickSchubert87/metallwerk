@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrick Schubert">
+    <title>Metallwerk</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Costume Style -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Font Awasome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+
+    <!-- Lazy Load -->
+    <script src="js/lazyload-img.js" defer></script>
+
+    <!--Smoothe Scroll-->
+    <script src="src/js/smooth-scroll.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <header class="container-fluid bg-dark">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <!--Navbar Logo-->
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/METALLWERK-logo.jpg" alt="" width="30" height="24">Metallwerk
+                </a>
+                <!--Navbar Toggler-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <!--Navbar Nav-Item Links-->
+                    <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li> -->
+                        <a class="nav-link active" aria-current="page" href="#title">Home</a>
+                        <a class="nav-link" href="#unternehmen">Unternehmen</a>
+                        <a class="nav-link" href="#leistungen">Leistungen</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Leistungen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                    <a class="nav-link" href="#referenzen">Referenzen</a>
+                </ul>
+                    <!-- <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                    <ul class="nav navbar-nav d-flex flex-row justify-content-center flex-nowrap">
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook mr-1"></i></a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <ul class="nav navbar-nav d-flex flex-row justify-content-center flex-nowrap">
+                            <li>
+                                <a href="mailto:marcelsemder@gmx.de" id="contact-btn-navbar"
+                                    class="nav-link text-dark">Kontakt</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title">
+
+            <div class="title-logo">
+                <img src="img/METALLWERK-logo.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <!--Carousel min-width 720px-->
+            <div id="title-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="title-carousel-inner">
+                    <!-- <div class="carousel-item active">
+      <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/a8/a835b3e9-ba3f-4685-a2e7-566d2b026394?rule=$_57.JPG" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block text-center">
+      <div class="carousel-caption h-100 text-center">
+        <h5>Antriebstechnik</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div> -->
+
+                    <div class="carousel-item active">
+                        <div id="slide-img-1" class="title-slide-img">
+
+                            <!-- <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/a8/a835b3e9-ba3f-4685-a2e7-566d2b026394?rule=$_57.JPG" class="d-block w-100" alt="..."> -->
+
+                            <!-- <div class="container text-center slider-text"> -->
+                            <div
+                                class="container-fluid d-flex align-items-center justify-content-center h-100 slider-text">
+                                <div class="row d-flex justify-content-center text-center text-light">
+                                    <h1>Antriebstechnik</h1>
+                                    <!-- <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+                                    <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div id="slide-img-2" class="title-slide-img">
+                            <div
+                                class="container-fluid d-flex align-items-center justify-content-center h-100 slider-text">
+                                <div class="row d-flex justify-content-center text-center text-light">
+                                    <h1>Instandhaltung & Fertigung</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="slide-img-3" class="title-slide-img">
+                            <div
+                                class="container-fluid d-flex align-items-center justify-content-center h-100 slider-text">
+                                <div class="row d-flex justify-content-center text-center text-light">
+                                    <h1>Montagen / Reparaturen</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--Unternehemen-->
+        <section id="unternehmen" class="py-3">
+            <div class="container py-5 text-center">
+                <h1 class="">Unternehmen</h1>
+                <hr>
+                <p class="">Meisterbetrieb</p>
+                <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores, reprehenderit
+                    quasi minima aspernatur nobis nemo nulla. Cupiditate porro quod assumenda laudantium quam debitis
+                    ipsam, voluptate ut excepturi repellat doloremque.</p>
+            </div>
+        </section>
+
+        <!--Leistungen-->
+        <section id="leistungen" class="py-3">
+            <div class="container py-5">
+                <h1 class="text-center">Leistungen</h1>
+                <hr>
+
+                <!-- <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-check-circle fa-4x icon my-3"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Antriebstechnik</h5>
+                            <p class="card-text">Dreh - oder Schiebetor in freitragender oder rollbarer Konstruktion, Garagentore  jeglicher Größe und Bauart oder Sonderanfertigung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-check-circle fa-4x icon my-3"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Montage Inbetriebnahme &amp; Abnahme</h5>
+                            <p class="card-text">Toren, Zäune, Fenstergitter oder Dächer/Vordächer oder Überdachungen, Garagentoren, Handläufe</p>
+                            <p class="card-text">Jährliche Prüfung und Wartung nach ASR A1.7 möglich, entsprechende Sachkunde vorhanden.</p>
+                            <a href="#" class="btn btn-primary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-check-circle fa-4x icon my-3"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sonstige Dienstleistungen</h5>
+                            <ul class="card-text">
+                                <li>Reparaturen und Instandhaltung</li>
+                                <li>Wartungsarbeiten</li>
+                                <li>Sonderanfertigungen</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+                <div class="row text-center">
+                    <div class="col-md-4 mb-5">
+                        <!-- <i class="fas fa-tachometer-alt fa-4x text-dark"></i> -->
+                        <i class="fas fa-check-circle fa-4x icon"></i>
+                        <h4 class="my-4 font-weight-bold">Antriebstechnik &amp; Jährliche Prüfung</h4>
+                        <p class="text-dark">
+                            Dreh - oder Schiebetor in freitragender oder rollbarer Konstruktion, Garagentore jeglicher
+                            Größe und Bauart oder Sonderanfertigung
+                        </p>
+                        <p class="text-dark">
+                            Entsprechende Sachkunde zur Prüfung vorhanden.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <!-- <i class="fas fa-tachometer-alt fa-4x text-dark"></i> -->
+                        <i class="fas fa-cogs fa-4x icon"></i>
+                        <h4 class="my-4 font-weight-bold">Montage Inbetriebnahme &amp; Abnahme</h4>
+                        <p class="text-dark">
+                            Toren, Zäune, Fenstergitter oder Dächer/Vordächer oder Überdachungen, Garagentoren,
+                            Handläufe
+                        </p>
+                        <p class="text-dark">
+                            Dreh/ Schiebetore oder Zaunanlagen.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <!-- <i class="fas fa-tachometer-alt fa-4x text-dark"></i> -->
+                        <i class="fas fa-clipboard-list fa-4x icon"></i>
+                        <h4 class="my-4 font-weight-bold">Sonstige <br> Dienstleistungen</h4>
+                        <p class="text-dark">
+                        <ul class="">
+                            <li>Reparaturen und Instandhaltung</li>
+                            <li>Wartungsarbeiten</li>
+                            <li>Sonderanfertigungen: <br> Bleche/Torrahmen kleinerer Größe oder auch Fenstergitter,
+                                Überdachungen</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Referenzen-->
+        <section id="referenzen" class="py-3">
+            <div class="container py-5">
+                <h1 class="text-center">Referenzen</h1>
+                <hr>
+
+                <div id="referenz-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <!-- <div class="container-fluid referenz"> -->
+                                <p class="py-3">
+                                    Montage Inbetriebnahme & Abnahme –– Garagentor und Antriebstechnik
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/44/4478cff4-fede-4045-b960-b841ce207499?rule=$_59.JPG"
+                                        class="referenz-image d-block" alt="referenz-1" width="500px"/>
+                                </div>
+                                <p class="text-dark py-2"><em>Schulze, Gießen</em></p>
+                            <!-- </div> -->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <div class="container-fluid referenz"> -->
+                                <p class="py-2">
+                                    Sonderanfertigung –– Zaunanlage mit Antriebstechnik
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/44/4487acca-8aa6-4832-95d3-e9fd7b9bb766?rule=$_59.JPG"
+                                        class="testimonial-image d-block" alt="referenz-2" width="500px"/>
+                                </div>
+                                <p class="text-dark py-2"><em>Schmidt, Frankfurt am Main</em></p>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#referenz-carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#referenz-carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Kontakt-->
+        <section id="kontakt" class="py-3">
+            <div class="container py-5">
+                <h1 class="text-center">Kontakt</h1>
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <!-- Form contact -->
+                        <form class="p-5 grey-text" action="mailto:marcelsemder@gmx.de" method="POST"
+                            enctype="text/plain">
+                            <div class="md-form form-sm"> <i class="fas fa-user prefix"></i>
+                                <input type="text" id="form3" class="form-control form-control-sm" placeholder="Name/Firma">
+                                <label for="form3">Name/Firma</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fas fa-envelope prefix"></i>
+                                <input type="text" id="form2" class="form-control form-control-sm" placeholder="E-Mail Adresse">
+                                <label for="form2">E-Mail Adresse</label>
+                            </div>
+                            <!-- <div class="md-form form-sm"> <i class="fas fa-tag prefix"></i>
+                                <input type="text" id="form32" class="form-control form-control-sm" placeholder="Auftragsbeschreibung">
+                                <label for="form34">Auftragsbeschreibung</label>
+                            </div> -->
+                            <div class="md-form form-sm"> <i class="fas fa-pencil-alt prefix"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm"
+                                    rows="4" placeholder="Auftragsbeschreibung"></textarea>
+                                <label for="form8">Auftragsbeschreibung</label>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary text-dark">Auftrag Anfrage Absenden<i class="far fa-paper-planeml-1"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row text-center">
+                            <div class="col-lg-4 col-md-12 mb-3">
+                                <p><i class="fas fa-map fa-1x mr-2 text-dark"></i> Hohenstein - Ernstthal</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <p><i class="fas fa-building fa-1x mr-2 text-dark"></i> Mon - Fri, 8:00-18:00</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <p><i class="fas fa-phone fa-1x mr-2 text-dark"></i><a class="text-dark" href="tel:+49152/21893175"> 0152/21893175</a></p>
+                            </div>
+                        </div>
+
+                        <!--Google map-->
+                        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20160.965232786544!2d12.90967920426136!3d50.82892903188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a7465f01fd9de9%3A0x51ddf8280975d11c!2sChemnitz!5e0!3m2!1sen!2sde!4v1602773504847!5m2!1sen!2sde"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer font-small bg-secondary lighten-5">
+        <div class="bg-primary">
+          <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Treten Sie mit uns in Kontakt</h6>
+              </div>
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f text-dark mr-4"> </i>
+                </a>
+                <a class="tw-ic">
+                  <i class="fab fa-twitter text-dark mr-4"> </i>
+                </a>
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in text-dark mr-4"> </i>
+                </a>
+                <a class="ins-ic">
+                  <i class="fab fa-instagram text-dark mr-4"> </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center text-md-left mt-5">
+          <div class="row mt-3 dark-grey-text">
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+              <h6 class="text-uppercase font-weight-bold"><span class="brand">Metallwerk</span></h6>
+              <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <img src="img/METALLWERK-logo.jpg" alt="Metallwerk Logo" id="footer-logo">
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">Produkt</h6>
+              <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="text-dark" href="#!">Produkt 1</a>
+              </p>
+              <p>
+                <a class="text-dark" href="#!">Produkt 2</a>
+              </p>
+              <p>
+                <a class="text-dark" href="#!">Produkt 3</a>
+              </p>
+              <p>
+                <a class="text-dark" href="#!">Produkt 4</a>
+              </p>
+            </div>
+            <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">Nützliche Links</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="dark-grey-text" href="#!">Your Account</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Shipping Rates</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Help</a>
+              </p>
+            </div> -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <i class="fas fa-home mr-3"></i> Hohenstein - Ernstthal</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i><a class="text-dark" href="mailto:marcelsemder@gmx.de"> info@metallwerk.de</a></p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> <a class="text-dark" href="tel:+49152/21893175"> 0152/21893175</a></p>
+              <!-- <p>
+                <i class="fas fa-print mr-3"></i> + 01 234 567 89
+            </p> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="footer-copyright text-center bg-primary text-black-50 py-3">
+          © <span id="year"></span> Copyright:
+          <a class="text-black-50" href="#"> Patrick Schubert</a>
+        </div>
+  
+      </footer>
+</body>
+
+</html>
