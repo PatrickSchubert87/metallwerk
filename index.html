@@ -32,13 +32,13 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-    <header class="container-fluid bg-dark">
+    <header class="container-fluid bg-dark fixed-top lazyload-img">
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark text-uppercase">
             <!--Navbar Logo-->
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="img/METALLWERK-logo.jpg" alt="" width="30" height="24">Metallwerk
+                    <img class="me-3 lazyload-img" src="/img/Logo_RGB.svg" alt="" width="70" height="50">Metallwerk
                 </a>
                 <!--Navbar Toggler-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
@@ -80,15 +80,16 @@
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form> -->
                     <ul class="nav navbar-nav d-flex flex-row justify-content-center flex-nowrap">
+                        <li class="nav-item"><a class="nav-link" href="tel:+49152/21893175"><i class="fas fa-phone mr-1"></i></a> </li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook mr-1"></i></a> </li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
                         </li>
                         <ul class="nav navbar-nav d-flex flex-row justify-content-center flex-nowrap">
-                            <li>
+                            <li class="ms-3 my-auto">
                                 <a href="mailto:marcelsemder@gmx.de" id="contact-btn-navbar"
-                                    class="nav-link text-dark">Kontakt</a>
+                                    class="nav-link btn-primary text-dark">Kontakt</a>
                             </li>
                         </ul>
                     </ul>
@@ -101,7 +102,7 @@
         <section id="title">
 
             <div class="title-logo">
-                <img src="img/METALLWERK-logo.jpg" class="d-block w-100" alt="...">
+                <img src="img/METALLWERK-logo.jpg" class="d-block w-100 lazyload-img" alt="..." loading="lazy" >
             </div>
 
             <!--Carousel min-width 720px-->
@@ -117,15 +118,15 @@
     </div> -->
 
                     <div class="carousel-item active">
-                        <div id="slide-img-1" class="title-slide-img">
+                        <div id="slide-img-1" class="title-slide-img lazyload-img">
 
                             <!-- <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/a8/a835b3e9-ba3f-4685-a2e7-566d2b026394?rule=$_57.JPG" class="d-block w-100" alt="..."> -->
 
                             <!-- <div class="container text-center slider-text"> -->
                             <div
-                                class="container-fluid d-flex align-items-center justify-content-center h-100 slider-text">
+                                class="container-fluid d-flex align-items-center justify-content-center h-100 overlay">
                                 <div class="row d-flex justify-content-center text-center text-light">
-                                    <h1>Antriebstechnik</h1>
+                                    <h1 class="text-uppercase">Antriebstechnik</h1>
                                     <!-- <p>Some representative placeholder content for the second slide of the carousel.</p> -->
                                     <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
                                 </div>
@@ -134,21 +135,21 @@
                     </div>
 
                     <div class="carousel-item">
-                        <div id="slide-img-2" class="title-slide-img">
+                        <div id="slide-img-2" class="title-slide-img lazyload-img">
                             <div
                                 class="container-fluid d-flex align-items-center justify-content-center h-100 slider-text">
                                 <div class="row d-flex justify-content-center text-center text-light">
-                                    <h1>Instandhaltung & Fertigung</h1>
+                                    <h1 class="text-uppercase">Instandhaltung & Fertigung</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div id="slide-img-3" class="title-slide-img">
+                        <div id="slide-img-3" class="title-slide-img lazyload-img">
                             <div
                                 class="container-fluid d-flex align-items-center justify-content-center h-100 slider-text">
                                 <div class="row d-flex justify-content-center text-center text-light">
-                                    <h1>Montagen / Reparaturen</h1>
+                                    <h1 class="text-uppercase">Montagen / Reparaturen</h1>
                                 </div>
                             </div>
                         </div>
@@ -160,9 +161,9 @@
         </section>
 
         <!--Unternehemen-->
-        <section id="unternehmen" class="py-3">
+        <section id="unternehmen" class="py-5">
             <div class="container py-5 text-center">
-                <h1 class="">Unternehmen</h1>
+                <h1 class="text-secundary text-uppercase">Unternehmen</h1>
                 <hr>
                 <p class="">Meisterbetrieb</p>
                 <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores, reprehenderit
@@ -172,9 +173,9 @@
         </section>
 
         <!--Leistungen-->
-        <section id="leistungen" class="py-3">
+        <section id="leistungen" class="py-5">
             <div class="container py-5">
-                <h1 class="text-center">Leistungen</h1>
+                <h1 class="text-center text-secundary text-uppercase">Leistungen</h1>
                 <hr>
 
                 <!-- <div class="row">
@@ -220,7 +221,7 @@
                 </div>
             </div> -->
 
-                <div class="row text-center">
+                <div class="row pt-5 text-center">
                     <div class="col-md-4 mb-5">
                         <!-- <i class="fas fa-tachometer-alt fa-4x text-dark"></i> -->
                         <i class="fas fa-check-circle fa-4x icon"></i>
@@ -263,23 +264,25 @@
         </section>
 
         <!--Referenzen-->
-        <section id="referenzen" class="py-3">
+        <section id="referenzen" class="">
+
+            <div class="overlay py-5">
             <div class="container py-5">
-                <h1 class="text-center">Referenzen</h1>
-                <hr>
+                <h1 class="text-center text-primary text-uppercase">Referenzen</h1>
+                <hr class="bg-primary">
 
                 <div id="referenz-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner text-center">
+                    <div class="carousel-inner text-center text-light">
                         <div class="carousel-item active">
                             <!-- <div class="container-fluid referenz"> -->
                                 <p class="py-3">
                                     Montage Inbetriebnahme & Abnahme –– Garagentor und Antriebstechnik
                                 </p>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-center lazyload-img">
                                     <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/44/4478cff4-fede-4045-b960-b841ce207499?rule=$_59.JPG"
-                                        class="referenz-image d-block" alt="referenz-1" width="500px"/>
+                                        class="referenz-image d-block" alt="referenz-1" width="650px" loading="lazy"/>
                                 </div>
-                                <p class="text-dark py-2"><em>Schulze, Gießen</em></p>
+                                <p class="py-2"><em>Schulze, Gießen</em></p>
                             <!-- </div> -->
                         </div>
                         <div class="carousel-item">
@@ -287,11 +290,11 @@
                                 <p class="py-2">
                                     Sonderanfertigung –– Zaunanlage mit Antriebstechnik
                                 </p>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-center lazyload-img">
                                     <img src="https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/44/4487acca-8aa6-4832-95d3-e9fd7b9bb766?rule=$_59.JPG"
-                                        class="testimonial-image d-block" alt="referenz-2" width="500px"/>
+                                        class="testimonial-image d-block" alt="referenz-2" width="650px" loading="lazy"/>
                                 </div>
-                                <p class="text-dark py-2"><em>Schmidt, Frankfurt am Main</em></p>
+                                <p class="py-2"><em>Schmidt, Frankfurt am Main</em></p>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -305,35 +308,46 @@
                     </a>
                 </div>
             </div>
+            </div>
         </section>
 
         <!--Kontakt-->
-        <section id="kontakt" class="py-3">
+        <section id="kontakt" class="bg-dark text-primary text-uppercase py-5">
+            <!-- <div class="overlay"> -->
             <div class="container py-5">
                 <h1 class="text-center">Kontakt</h1>
-                <hr>
+                <hr class="bg-primary">
 
                 <div class="row">
                     <div class="col-lg-5 col-md-12">
                         <!-- Form contact -->
-                        <form class="p-5 grey-text" action="mailto:marcelsemder@gmx.de" method="POST"
+                        <form class="" action="mailto:marcelsemder@gmx.de" method="POST"
                             enctype="text/plain">
-                            <div class="md-form form-sm"> <i class="fas fa-user prefix"></i>
-                                <input type="text" id="form3" class="form-control form-control-sm" placeholder="Name/Firma">
-                                <label for="form3">Name/Firma</label>
+                            <div class="md-form form-sm">
+                                <div class="mb-3">
+                                    <i class="fas fa-user prefix"></i>
+                                    <label for="form3">Name/Firma</label>
+                                </div>
+                                <input type="text" id="form3" class="form-control form-control-sm mb-3" placeholder="Name/Firma">
                             </div>
-                            <div class="md-form form-sm"> <i class="fas fa-envelope prefix"></i>
-                                <input type="text" id="form2" class="form-control form-control-sm" placeholder="E-Mail Adresse">
-                                <label for="form2">E-Mail Adresse</label>
+                            <div class="md-form form-sm"> 
+                                <div class="mb-3">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <label for="form2">E-Mail Adresse</label>
+                                </div>
+                                <input type="text" id="form2" class="form-control form-control-sm mb-3" placeholder="E-Mail Adresse">
                             </div>
                             <!-- <div class="md-form form-sm"> <i class="fas fa-tag prefix"></i>
                                 <input type="text" id="form32" class="form-control form-control-sm" placeholder="Auftragsbeschreibung">
                                 <label for="form34">Auftragsbeschreibung</label>
                             </div> -->
-                            <div class="md-form form-sm"> <i class="fas fa-pencil-alt prefix"></i>
-                                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm"
+                            <div class="md-form form-sm">
+                                <div class="mb-3">
+                                    <i class="fas fa-pencil-alt prefix"></i>
+                                    <label for="form8">Auftragsbeschreibung</label>
+                                </div>
+                                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm mb-3"
                                     rows="4" placeholder="Auftragsbeschreibung"></textarea>
-                                <label for="form8">Auftragsbeschreibung</label>
                             </div>
                             <div class="text-center mt-4">
                                 <button class="btn btn-primary text-dark">Auftrag Anfrage Absenden<i class="far fa-paper-planeml-1"></i></button>
@@ -344,18 +358,18 @@
                     <div class="col-lg-7 col-md-12">
                         <div class="row text-center">
                             <div class="col-lg-4 col-md-12 mb-3">
-                                <p><i class="fas fa-map fa-1x mr-2 text-dark"></i> Hohenstein - Ernstthal</p>
+                                <p><i class="fas fa-map fa-1x mr-2 "></i> Hohenstein - Ernstthal</p>
                             </div>
                             <div class="col-lg-4 col-md-6 mb-3">
-                                <p><i class="fas fa-building fa-1x mr-2 text-dark"></i> Mon - Fri, 8:00-18:00</p>
+                                <p><i class="fas fa-building fa-1x mr-2 "></i> Mon - Fri, 8:00-18:00</p>
                             </div>
                             <div class="col-lg-4 col-md-6 mb-3">
-                                <p><i class="fas fa-phone fa-1x mr-2 text-dark"></i><a class="text-dark" href="tel:+49152/21893175"> 0152/21893175</a></p>
+                                <p><i class="fas fa-phone fa-1x mr-2 "></i><a class="" href="tel:+49152/21893175"> 0152/21893175</a></p>
                             </div>
                         </div>
 
                         <!--Google map-->
-                        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px">
+                        <div id="map-container" class="z-depth-1-half map-container mb-5 lazyload-img" style="height: 400px">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20160.965232786544!2d12.90967920426136!3d50.82892903188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a7465f01fd9de9%3A0x51ddf8280975d11c!2sChemnitz!5e0!3m2!1sen!2sde!4v1602773504847!5m2!1sen!2sde"
                                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
@@ -366,58 +380,60 @@
 
                 </div>
             </div>
+            <!-- </div> -->
         </section>
     </main>
 
-    <footer class="page-footer font-small bg-secondary lighten-5">
-        <div class="bg-primary">
+    <footer class="bg-secondary">
+        <!-- <div class="bg-primary"> -->
           <div class="container">
             <div class="row py-4 d-flex align-items-center">
               <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                <h6 class="mb-0">Treten Sie mit uns in Kontakt</h6>
+                <h6 class="mb-0 text-primary">Treten Sie mit uns in Kontakt</h6>
               </div>
-              <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <div class="col-md-6 col-lg-7 text-center d-flex justify-content-evenly text-primary">
                 <a class="fb-ic">
-                  <i class="fab fa-facebook-f text-dark mr-4"> </i>
+                  <i class="fab fa-facebook-f"> </i>
                 </a>
                 <a class="tw-ic">
-                  <i class="fab fa-twitter text-dark mr-4"> </i>
+                  <i class="fab fa-twitter"> </i>
                 </a>
                 <a class="li-ic">
-                  <i class="fab fa-linkedin-in text-dark mr-4"> </i>
+                  <i class="fab fa-linkedin-in"> </i>
                 </a>
                 <a class="ins-ic">
-                  <i class="fab fa-instagram text-dark mr-4"> </i>
+                  <i class="fab fa-instagram"> </i>
                 </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container text-center text-md-left mt-5">
-          <div class="row mt-3 dark-grey-text">
-            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-              <h6 class="text-uppercase font-weight-bold"><span class="brand">Metallwerk</span></h6>
-              <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <img src="img/METALLWERK-logo.jpg" alt="Metallwerk Logo" id="footer-logo">
-              </p>
+        <!-- </div> -->
+        <div class="container text-center mt-5 text-light">
+          <div class="row mt-3 d-flex justify-content-between">
+            <!-- <div class="col-md-3 col-lg-4 col-xl-3 mb-4"> -->
+            <div class="col mb-4">
+              <!-- <h6 class="text-uppercase font-weight-bold"><span class="brand">Metallwerk</span></h6> -->
+              <!-- <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;"> -->
+              <!-- <p> -->
+                <img src="img/Logo_RGB.svg" alt="Metallwerk Logo" id="footer-logo" class="lazyload-img" loading="lazy">
+              <!-- </p> -->
             </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase font-weight-bold">Produkt</h6>
               <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
               <p>
-                <a class="text-dark" href="#!">Produkt 1</a>
+                <a class="text-light" href="#!">Produkt 1</a>
               </p>
               <p>
-                <a class="text-dark" href="#!">Produkt 2</a>
+                <a class="text-light" href="#!">Produkt 2</a>
               </p>
               <p>
-                <a class="text-dark" href="#!">Produkt 3</a>
+                <a class="text-light" href="#!">Produkt 3</a>
               </p>
               <p>
-                <a class="text-dark" href="#!">Produkt 4</a>
+                <a class="text-light" href="#!">Produkt 4</a>
               </p>
-            </div>
+            </div> -->
             <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase font-weight-bold">Nützliche Links</h6>
               <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -434,15 +450,15 @@
                 <a class="dark-grey-text" href="#!">Help</a>
               </p>
             </div> -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase font-weight-bold">Contact</h6>
-              <hr class="bg-primary teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <div class="col text-light">
+              <h6 class="text-uppercase">Contact</h6>
+              <hr class="bg-primary mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
               <p>
-                <i class="fas fa-home mr-3"></i> Hohenstein - Ernstthal</p>
+                <i class="fas fa-home me-3"></i> Hohenstein - Ernstthal</p>
               <p>
-                <i class="fas fa-envelope mr-3"></i><a class="text-dark" href="mailto:marcelsemder@gmx.de"> info@metallwerk.de</a></p>
+                <i class="fas fa-envelope me-3"></i><a class="" href="mailto:marcelsemder@gmx.de"> info@metallwerk.de</a></p>
               <p>
-                <i class="fas fa-phone mr-3"></i> <a class="text-dark" href="tel:+49152/21893175"> 0152/21893175</a></p>
+                <i class="fas fa-phone me-3"></i> <a class="" href="tel:+49152/21893175"> 0152/21893175</a></p>
               <!-- <p>
                 <i class="fas fa-print mr-3"></i> + 01 234 567 89
             </p> -->
@@ -451,9 +467,9 @@
         </div>
   
         <!-- Copyright -->
-        <div class="footer-copyright text-center bg-primary text-black-50 py-3">
+        <div class="footer-copyright text-center text-dark py-3">
           © <span id="year"></span> Copyright:
-          <a class="text-black-50" href="#"> Patrick Schubert</a>
+          <a class="text-dark" href="#"> Patrick Schubert</a>
         </div>
   
       </footer>
