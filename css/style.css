@@ -22,12 +22,12 @@ header {
     height: 70px;
 }
 
-/* #leistungen {
-    background-image: url(http://p-schub.lima-city.de/metallwerk/img/dirty-metal-texture.jpg);
+.leistungen {
+    background-image: url(http://p-schub.lima-city.de/metallwerk/img/Lochmuster.svg);
     background-size: cover;
     width: 100vw;
     height: 100%;
-} */
+}
 
 #referenzen {
     background-image: url(http://p-schub.lima-city.de/metallwerk/img/dirty-metal-texture.jpg);
