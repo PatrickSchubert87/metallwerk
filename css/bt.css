@@ -30,7 +30,7 @@
 
 /* Navbar Mobile */
 @media all and (max-width: 719px) {
-    .collapse, navbar-collapse {
+    .collapse {
         background-color: #212522;
         width: 100vw;
         text-align: center;
