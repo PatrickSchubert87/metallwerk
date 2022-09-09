@@ -22,6 +22,12 @@ header {
     height: 70px;
 }
 
+@media all and (max-width: 719px) {
+    .busines-name {
+        display: none;
+    }
+}
+
 .leistungen {
     background-image: url(http://p-schub.lima-city.de/metallwerk/img/Lochmuster.svg);
     background-size: cover;
