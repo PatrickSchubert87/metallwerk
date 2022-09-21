@@ -37,12 +37,21 @@
         background-color: rgba(0, 0, 0, .2);
     }
     #slide-img-1 {
-        background-image: url(https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/a8/a835b3e9-ba3f-4685-a2e7-566d2b026394?rule=$_57.JPG);
+        background-image: url(http://p-schub.lima-city.de/metallwerk/img/title-images/antriebstechnik.JPG);
     }
     #slide-img-2 {
-        background-image: url(http://p-schub.lima-city.de/metallwerk/img/metallwerk.png);
+        background-image: url(http://p-schub.lima-city.de/metallwerk/img/title-images/IMG_0318.JPG);
     }
     #slide-img-3 {
-        background-image: url(https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/0f/0f4cd412-f008-4938-8f39-a4d66d5b2f3d?rule=$_57.JPG);
+        background-image: url(http://p-schub.lima-city.de/metallwerk/img/title-images/instandhaltung.JPG);
+    }
+    /* #slide-img-2 {
+        background-image: url(http://p-schub.lima-city.de/metallwerk/img/title-images/metallwerk.png);
+    } */
+    #slide-img-4 {
+        background-image: url(http://p-schub.lima-city.de/metallwerk/img/title-images/montagen.JPG);
+    }
+    #slide-img-5 {
+        background-image: url(http://p-schub.lima-city.de/metallwerk/img/title-images/reparaturen.JPG);
     }
 }
